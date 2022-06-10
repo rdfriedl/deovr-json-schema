@@ -5,6 +5,7 @@
   "author": "Robert Friedl <rdfriedl@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "ts-json-schema-generator --path src/index.ts --type DeoVrJson -o dist/schema.json --additional-properties true",
     "postbuild": "tsc",
     "format": "prettier -w ."
