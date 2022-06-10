@@ -121,9 +121,11 @@ export type AuthMetadata = {
    */
   authorized?: -1 | 0 | 1;
 };
-export type DeoVrMultiVideoJson = AuthMetadata & {
+export type MultiVideoJson = AuthMetadata & {
   scenes?: Scene[];
 };
-export type DeoVrSingleVideoJson = AuthMetadata & FullVideo;
+export type SingleVideoJson = AuthMetadata & FullVideo;
 
-export type DeoVrJson = DeoVrMultiVideoJson | DeoVrSingleVideoJson;
+export type DeoVrJson = (MultiVideoJson | SingleVideoJson) & {
+  $schema: string;
+};

@@ -9,9 +9,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "dist"
+    "emitDeclarationOnly": true
   },
-  "include": ["src"],
+  "include": ["index.ts"],
   "exclude": ["node_modules", "dist"]
 }

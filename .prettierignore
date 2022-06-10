@@ -1,1 +1,4 @@
 dist
+single.json
+multi.json
+*.d.ts
