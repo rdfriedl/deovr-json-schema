@@ -119,7 +119,7 @@ export type AuthMetadata = {
    * In case of authorization error, DeoVR shows the following message: «Invalid login or password!».
    * If authorization is not used, the field is not required or its value should equal to 0.
    */
-  authorized: -1 | 0 | 1;
+  authorized?: -1 | 0 | 1;
 };
 export type DeoVrMultiVideoJson = AuthMetadata & {
   scenes?: Scene[];
