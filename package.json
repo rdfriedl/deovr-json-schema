@@ -2,7 +2,7 @@
   "name": "deovr-json-schema",
   "version": "0.1.0",
   "types": "dist/index.d.ts",
-  "author": "Robert Friedl <robert.friedl@equipmentshare.com>",
+  "author": "Robert Friedl <rdfriedl@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "ts-json-schema-generator --path src/index.ts --type DeoVrJson -o dist/schema.json --additional-properties true",
