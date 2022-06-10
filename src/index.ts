@@ -67,18 +67,21 @@ type ScreenMetaData = {
   stereoMode?: StereoMode;
   viewAngle?: 180 | 360;
 };
-type BaseVideo = BaseItem & {
+export type VideoLink = {
+  title: string;
+  /** URL to thumbnail image */
+  thumbnailUrl: string;
   /** length of video in seconds */
   videoLength?: number;
-};
-export type VideoLink = BaseVideo & {
   /** an absolute URL to the video json */
   video_url: string;
 };
 export type FullVideo = ScreenMetaData &
-  BaseVideo & {
+  BaseItem & {
     description?: string;
     encodings: VideoEncoding[];
+    /** length of video in seconds */
+    videoLength?: number;
     /**
      * URL to a video that is the same length as the original video
      * used to rewind and fast foward in the player
